@@ -13,13 +13,14 @@
         Database password - h....2...EP..    
     MS Azure Control Panel - https://manage.windowsazure.com/@sergiishevchenkoepam.onmicrosoft.com#Workspaces/WebsiteExtension/websites
 
+
  IIS (local) Site Settigs:
     Site name - http://localhost:9810/
  
- Frameworks & Tools:
+ Frameworks & Tools: // TODO AG BOOKMARK:
     .NET 4.5
     Visual Studio 2013 Update 2
-    Web API 2.1
+    Web API 2.1 (NuGet package  "Microsoft.AspNet.WebApi" version="5.1.2")
     Entity Framework 6.0.0
     Knockout.js 3.1
     jQuery 1.10.2
@@ -30,6 +31,7 @@
 
 Using:
     Web API - http://localhost:62407/api/Books  etc.
+
 
 
 
@@ -65,7 +67,7 @@ beginning..
     - use [Route] and [RoutePrefix] attribute for class or methods
     - http://www.asp.net/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2
 
-2) How to host ASP.NET project in IIS using VS Publish method
+2) How to host ASP.NET project in IIS using VS Publish method:
     - http://dotnetmentors.com/web-api/host-asp-net-web-api-in-iis-using-visual-studio-publish.aspx
     - DO NOT FORGET to change Identity of Application pool ".NET v4.5"
       from 'ApplicationPoolIdentity' to 'LocalSystem'
@@ -73,3 +75,8 @@ beginning..
 
 3) How to enable ASP.NET 4.5 support in IIS (HTTP Error 500.19)
     - http://serverfault.com/questions/514091/iis-8-asp-net-mvc-http-error-500-19
+
+4) How to add generetion of Help Page for WebAPI:
+    - NuGet  <package id="Microsoft.AspNet.WebApi.HelpPage" version="5.1.2" targetFramework="net45" />
+	- proj Properties -> Build -> Output -> XML documentation file: "bin\XmlDocumentationAzure.xml" 
+	- see  http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/creating-api-help-pages

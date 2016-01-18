@@ -49,6 +49,7 @@ var ViewModel = function () {
         });
     }
 
+    // TODO AG BOOKMARK: js - Ajax HTTP calls  GET/POST/DELETE.
     // Perform an asynchronous HTTP (Ajax) request
     function ajaxHelper(uri, method, data) {
         self.error(''); // Clear error message

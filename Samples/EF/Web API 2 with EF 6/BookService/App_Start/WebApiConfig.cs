@@ -14,6 +14,7 @@ namespace BookService
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            // TODO AG BOOKMARK: default routing URL template.
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
